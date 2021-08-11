@@ -42,11 +42,25 @@ a:hover {
 	animation: blink-animation 0.5s infinite alternate;
 }
 
+.float.skuy-show {
+	animation: floating-animation 4s infinite;
+	transform: translateY(0);
+}
+
 @keyframes blink-animation {
 	50% {
 		opacity: 1;
 	}
 	100% {
 		opacity: 0;
+	}
+}
+
+@keyframes floating-animation {
+	50% {
+		transform: translateY(32px);
+	}
+	100% {
+		transform: translateY(0);
 	}
 }
