@@ -1,0 +1,30 @@
+-
+	var menu = [
+		{ href:'/', name:'Home' },
+		{ href:'/pameran', name:'Pameran' },
+		{ href:'/merchandise', name:'Merchandise' },
+		{ href:'/event', name:'Event' },
+		{ href:'/tentang', name:'Tentang' },
+	]
+
+div(class="w-full bg-white fixed py-4 z-10" id="navbar")
+	div(class="mx-auto container px-4 text-gray-500 font-normal flex flex-row justify-between items-center")
+		div(class="flex")
+			img(src="/assets/img/logo.png" class="h-16 mr-2")
+		div
+			img(src="/assets/svg/menu.svg" class="h-4 md:hidden"  id="toggle-show-navbar")
+		ul(class="list-none hidden md:flex")
+			each item in menu 
+				li
+					a(class="ml-6 hover:underline hover:text-gray-800" href=`${item.href}`)= item.name
+
+div(class="w-full h-full bg-blue-600 py-4 fixed top-0 z-20 hidden" id="navbar-mobile")
+	div(class="mx-auto container px-4 text-white font-bold flex flex-row justify-between items-center")
+		div(class="flex")
+			img(src="/assets/img/logo.png" class="h-16 mr-2")
+		div
+			img(src="/assets/svg/close.svg" class="h-4 md:hidden"  id="toggle-hide-navbar")
+	ul(class="list-none flex flex-col mt-8 text-white text-3xl mx-auto container px-4")
+		each item in menu 
+			li(class="my-3")
+				a(class="mobile-navbar-link" href=`${item.href}`)= item.name

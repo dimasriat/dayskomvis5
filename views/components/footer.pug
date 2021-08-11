@@ -1,0 +1,16 @@
+div(class="w-full text-white bg-blue-600 text-xl  py-8" )
+	div(class="mx-auto container px-4 w-full h-full flex flex-col md:flex-row justify-center ")
+		div(class="py-4 md:w-1/2 md:order-1")
+			div(class="flex items-center")
+				img(src="/assets/svg/logo.svg" class="h-16 mr-4")
+				div(class="text-4xl font-bold") Ngojol
+			div(class=" text-sm my-4")
+				p Website resmi Ngojek Online
+				p © 2021 ngojol.co.id
+		div(class="py-4 md:w-1/2 md:mx-2 md:order-2 mb-8")
+			div(class="font-bold") Company
+			ul(class="text-white")
+				each item in menu 
+					li(class="mt-3")
+						a(class="hover:underline" href=`${item.href}`)= item.name
+		

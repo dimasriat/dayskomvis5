@@ -1,0 +1,18 @@
+div(class="w-full min-h-screen text-white bg-blue-600" id="daftar")
+	div(class="container mx-auto px-4 py-12")
+		div(class="text-center font-bold py-8 text-3xl skuy skuy-up") Daftarkan dirimu
+		div(class="flex flex-col md:flex-row w-full")
+			-
+				var target = [
+					{src: 'helm.svg', category: 'driver', href: 'https://play.google.com/store/apps/details?id=com.ngojol.driver'},
+					{src: 'makan.svg', category: 'merchant', href: 'https://play.google.com/store/apps/details?id=com.ngojol.merchant'},
+				]
+			each item in target
+				div(class="w-full md:w-1/2 py-16 flex flex-col skuy skuy-up")
+					div(class="w-full h-32 px-4 flex justify-center")
+						img(src=`/assets/svg/${item.src}` class="h-full")
+					div(class="w-full px-4 flex justify-center")
+						p(class="text-center text-xl py-6") Daftar menjadi #{item.category}
+					div(class="w-full h-16 px-4 flex justify-center")
+						a(href=`${item.href}` class="h-full")
+							img(src="/assets/img/play-btn.png" class="h-full")
