@@ -6,6 +6,10 @@ function eClass(c) {
 	return document.querySelectorAll("." + c);
 }
 
+function eTag(t) {
+	return document.getElementsByTagName(t.toUpperCase());
+}
+
 function getPos(e) {
 	let pos = {
 		window: {
