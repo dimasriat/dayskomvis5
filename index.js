@@ -21,10 +21,13 @@ app.get("/tentang", (req, res) => {
 	return res.render("tentang", { pageName: "/tentang" });
 });
 app.get("/lomba", (req, res) => {
-	// return res.render("lomba", { pageName: "/lomba" });
-	return res.redirect(
-		"https://docs.google.com/forms/d/e/1FAIpQLSetIZ9EhLXZFn6rFm56dHf-WlIuR-r9AqaFuoCb_TR9_dW0Qw/viewform"
-	);
+	return res.render("lomba", { pageName: "/lomba" });
+});
+app.get("/lomba/poster", (req, res) => {
+	return res.render("lomba_poster", { pageName: "/lomba" });
+});
+app.get("/lomba/fotografi", (req, res) => {
+	return res.render("lomba_fotografi", { pageName: "/lomba" });
 });
 app.get("*", (req, res) => {
 	return res.render("maintenance");

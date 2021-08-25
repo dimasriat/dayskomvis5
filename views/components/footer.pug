@@ -1,14 +1,26 @@
 div(class="w-full text-white text-xl py-8" style="background-image: url('/assets/img/footer-bg.png'); background-position: center; background-size: cover; color: #14163F;")
 	div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full flex flex-col md:flex-row justify-center ")
-		div(class="py-4 md:w-1/2 md:order-1")
+		div(class="py-4 md:w-1/2 md:order-1 mb-8")
 			div(class="flex items-center")
 				img(src="/assets/img/logo-dark.png" class="h-48 mr-4 skuy float")
-		div(class="py-4 md:w-1/2 md:mx-2 md:order-2 mb-8")
+		div(class="py-4 md:w-1/4 md:mx-2 md:order-2 mb-8")
 			div(class="font-bold") Sitemap
 			ul
 				each item in menu 
-					li(class="mt-3")
-						a(class="hover:underline text-sm" href=`${item.href}`)= item.name
+					if item.submenu
+						each subitem in item.submenu 
+							li(class="mt-3")
+								a(class="hover:underline text-sm" href=`${subitem.href}`)= subitem.name
+					else
+						li(class="mt-3")
+							a(class="hover:underline text-sm" href=`${item.href}`)= item.name
+		div(class="py-4 md:w-1/4 md:mx-2 md:order-2 mb-8")
+			div(class="font-bold") Social
+			ul
+				li(class="mt-3")
+					a(class="hover:underline text-sm" href="https://instagram.com/dayskomvis") Instagram
+				li(class="mt-3")
+					a(class="hover:underline text-sm" href="https://www.facebook.com/dayskomvis/") Facebook
 	div(class="w-full text-center text-sm mt-16")
 		| © 2021. All Rights Reserved
 		
