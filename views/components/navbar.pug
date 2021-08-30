@@ -17,9 +17,9 @@
 div(class="w-full bg-white fixed py-4 z-10" id="navbar")
 	div(class="mx-auto container px-4 md:px-24 lg:px-48 text-gray-500 font-normal flex flex-row justify-between items-center")
 		div(class="flex")
-			img(src="/assets/img/logo.png" class="h-16 mr-2")
+			img(src="/img/logo.png" class="h-16 mr-2")
 		div
-			img(src="/assets/svg/menu.svg" class="h-4 md:hidden"  id="toggle-show-navbar")
+			img(src="/svg/menu.svg" class="h-4 md:hidden"  id="toggle-show-navbar")
 		ul(class="list-none hidden md:flex")
 			each item in menu 
 				if item.submenu
@@ -27,7 +27,7 @@ div(class="w-full bg-white fixed py-4 z-10" id="navbar")
 						li
 							a(class=`ml-6 hover:underline hover:text-gray-800 dropdown-btn cursor-pointer flex` data-target="dd1")
 								| #{item.name}
-								img(src="/assets/svg/dropdown.svg" class="ml-3")
+								img(src="/svg/dropdown.svg" class="ml-3")
 						ul(class="list-none hidden flex-col absolute bg-white w-48 mt-4 shadow-lg rounded-xl" id="dd1")
 							each subitem in item.submenu
 								li(class="py-4")
@@ -41,9 +41,9 @@ div(class="w-full bg-white fixed py-4 z-10" id="navbar")
 div(class="w-full h-full py-4 fixed top-0 z-20 hidden" id="navbar-mobile" style="background-color: #FFFAE9; color: #14163F;")
 	div(class="mx-auto container px-4 text-white font-bold flex flex-row justify-between items-center")
 		div(class="flex")
-			img(src="/assets/img/logo.png" class="h-16 mr-2")
+			img(src="/img/logo.png" class="h-16 mr-2")
 		div
-			img(src="/assets/svg/close.svg" class="h-4"  id="toggle-hide-navbar")
+			img(src="/svg/close.svg" class="h-4"  id="toggle-hide-navbar")
 	ul(class="list-none flex flex-col mt-8 text-3xl mx-auto container px-4")
 		each item in menu
 			if item.submenu
@@ -51,7 +51,7 @@ div(class="w-full h-full py-4 fixed top-0 z-20 hidden" id="navbar-mobile" style=
 					li(class="my-3")
 						a(class=`mobile-navbar-link flex dropdown-btn cursor-pointer ` data-target="dd2")
 							span= item.name
-							img(src="/assets/svg/dropdown.svg" class="ml-3")
+							img(src="/svg/dropdown.svg" class="ml-3")
 					ul(class="list-none hidden flex-col text-3xl mx-auto container px-4" id="dd2")
 						each subitem in item.submenu
 							li(class="my-3")
