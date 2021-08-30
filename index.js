@@ -42,6 +42,9 @@ app.get("/tentang", (req, res) => {
 	return res.render("tentang", { pageName: "/tentang" });
 });
 
+// TESTINGGG
+app.get('/pug', (req, res) => res.send('see 🥰'));
+
 app.get("*", (req, res) => {
 	return res.render("maintenance");
 });
