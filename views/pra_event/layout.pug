@@ -10,10 +10,10 @@ html(lang="en")
 		link(rel="shortcut icon", href="/img/logo.png", type="image/png")
 	body
 		//- navbar
-		include components/navbar.pug
-		//- about
-		include components/about_tentangpage.pug
+		include ../components/navbar.pug
+		//- content
+		block content
 		//- footer
-		include components/footer.pug
+		include ../components/footer.pug
 		script(src="/js/helper.js") 
 		script(src="/js/script.js") 

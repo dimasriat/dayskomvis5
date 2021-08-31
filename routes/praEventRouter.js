@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const api = require("../models/api.json");
 
-// PAMERAN
+// pra event
 function shuffle(array) {
 	var currentIndex = array.length,
 		randomIndex;
@@ -23,8 +23,12 @@ function shuffle(array) {
 	return array;
 }
 router.get("/", (req, res) => {
-	const pameran = shuffle(api.pameran);
-	return res.render("pameran", { pageName: "/pameran", pameran });
+	const pra_event = shuffle(api.pra_event);
+	return res.render("pra_event", { pageName: "/pra-event", pra_event });
 });
+router.get("/:id", (req, res) => {
+	return res.render(`pra_event/pra_event_${req.params.id}`, { pageName: "/pra-event" });
+});
+
 
 module.exports = router;
