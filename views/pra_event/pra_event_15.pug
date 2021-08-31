@@ -1,0 +1,39 @@
+extends layout.pug
+
+block content
+	div(class="w-full py-8 min-h-screen" style="color: #14163F;")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pra_event/asset_${karya.id}/banner.png` class="w-full")
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full")
+			div(class="text-4xl font-bold text-left")= karya.judul
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			p(class="text-justify text-md py-24") Groofy merupakan clothing brand startup dengan mengungsung tema “Youth Culture” inspirasinya berasal dari budaya anak muda.Youth Culture menurut beberapa scholars tak terbatas pada produk budaya fisik seperti baju dan fashion saja, tetapi meliputi aktivitas – aktivitas, ide – ide , dan segala hal yang mensyaratkan dinamika dan kekreativitasan yang tinggi. Dinamika dan Kreativitas menjadi tolak ukur yang penting dalam Youth Culture karena hal ini adalah ciri dari sifat pemuda. 
+				br
+				| Groofy merupakan brand clothing start up dan belum memiliki banyak desain, ini menjadi latar belakang penulis ingin memberikan solusi berupa desain kaos dengan menyesuaikan tema dari Groofy.
+
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			div(class="w-full grid grid-cols-1 md:grid-cols-2 gap-4")
+				- let i = 0
+				while i < 10
+					div(class=`w-full`)
+						img(src=`/img/pra_event/asset_${karya.id}/g${i + 1}.png` class="skuy skuy-up")
+					- i++
+				div(class=`w-full col-span-2`)
+					img(src=`/img/pra_event/asset_${karya.id}/gxx.png` class="skuy skuy-up")
+				- i = 11
+				while i <= 14
+					div(class=`w-full`)
+						img(src=`/img/pra_event/asset_${karya.id}/g${i}.png` class="skuy skuy-up")
+					- i++
+			div(class="py-12 flex flex-col justify-center items-center")
+				div(class="flex flex-col justify-center items-center")
+					img(src=`/img/pra_event/asset_${karya.id}/kreator.png` class="w-48")
+					p(class="text-3xl mt-4" style="color: #14163F;")= karya.kreator
+					p(class="text-xl mt-4") D-3 DKV 2018
+
+					div
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Sosial Media
+						p(class="text-sm mt-2") @#{karya.instagram}
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Portofolio
+						p(class="text-sm mt-2")
+							a(href="https://issuu.com/putroadiprasetyo1052" class="underline") issuu.com/putroadiprasetyo1052

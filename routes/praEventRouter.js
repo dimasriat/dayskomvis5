@@ -26,25 +26,13 @@ router.get("/", (req, res) => {
 	const pra_event = shuffle(api.pra_event);
 	return res.render("pra_event", { pageName: "/pra-event", pra_event });
 });
-router.get("/1", (req, res) => {
-	const id = 1;
-	return res.render(`pra_event/pra_event_${id}`, {
-		pageName: "/pra-event",
-		karya: api.pra_event[id - 1],
-	});
-});
-router.get("/3", (req, res) => {
-	const id = 3;
-	return res.render(`pra_event/pra_event_${id}`, {
-		pageName: "/pra-event",
-		karya: api.pra_event[id - 1],
-	});
-});
-router.get("/5", (req, res) => {
-	const id = 5;
-	return res.render(`pra_event/pra_event_${id}`, {
-		pageName: "/pra-event",
-		karya: api.pra_event[id - 1],
+
+[1, 3, 5, 15].forEach((id) => {
+	router.get(`/${id}`, (req, res) => {
+		return res.render(`pra_event/pra_event_${id}`, {
+			pageName: "/pra-event",
+			karya: api.pra_event[id - 1],
+		});
 	});
 });
 
