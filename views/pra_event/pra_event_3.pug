@@ -1,0 +1,40 @@
+extends layout.pug
+
+block content
+	div(class="w-full py-8 min-h-screen" style="color: #14163F;")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pra_event/asset_${karya.id}/banner.png` class="w-full")
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full")
+			div(class="text-4xl font-bold text-left")= karya.judul
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-24" style="color: #72727A;")
+			p(class="text-justify text-md py-24") Buku ini berisi tentang kerajinan tanaman bonsai. Menyajikan Foto dokumentasi mengenai tanaman bonsai bukan hanya sejarah dari tanaman bonsai saja namun juga mengenai apa itu tanaman bonsai, jenis-jenis tanaman bonsai, dan bagaimana cara perawatan tanaman bonsai yang akan membuat kita mengenali lebih jauh tentang kerajinan tanaman bonsai.
+			div(class="flex items-center")
+				img(src=`/img/pra_event/asset_${karya.id}/pic1.png`)
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			div(class="w-full py-12 flex flex-col justify-center items-center")
+				img(src=`/img/pra_event/asset_${karya.id}/pic2.png`)
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			div(class="py-24")
+				p(class="text-center text-3xl" style="color: #14163F;" ) Karya Pendukung
+				p(class="text-center text-xl mt-4") Karya pendukung dibuat sebagai media informasi yang dirancang secara komunikatif dapat memberikan perhatian kepada pembaca mengenai keberadaan Coffee Table Book ini.
+			div(class="w-full grid grid-cols-1 md:grid-cols-2 gap-4")
+				- let i = 0
+				while i < 5
+					div(class=`w-full md:p${i % 2 ? 't' : 'b'}-36`)
+						img(src=`/img/pra_event/asset_${karya.id}/g-${i + 1}.png` class="skuy skuy-up")
+					- i++
+			div(class="py-12 flex flex-col justify-center items-center")
+				div(class="flex flex-col justify-center items-center")
+					img(src=`/img/pra_event/asset_${karya.id}/qr.png` class="skuy skuy-up w-1/2")
+					p(class="text-xl text-center mt-16" style="color: #14163F;") Scan QR Code untuk Membaca Coffee Table Book Kerajinan Tanaman Bonsai
+			div(class="py-12 flex flex-col justify-center items-center")
+				div(class="flex flex-col justify-center items-center")
+					img(src=`/img/pra_event/asset_${karya.id}/kreator.png` class="w-48")
+					p(class="text-3xl mt-4" style="color: #14163F;")= karya.kreator
+					p(class="text-xl mt-4") D-3 DKV 2018
+
+					div
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Sosial Media
+						p(class="text-sm mt-2") @#{karya.instagram}
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Portofolio
+						p(class="text-sm mt-2") -
