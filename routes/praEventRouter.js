@@ -40,5 +40,13 @@ router.get("/3", (req, res) => {
 		karya: api.pra_event[id - 1],
 	});
 });
+router.get("/5", (req, res) => {
+	const id = 5;
+	return res.render(`pra_event/pra_event_${id}`, {
+		pageName: "/pra-event",
+		karya: api.pra_event[id - 1],
+	});
+});
+
 
 module.exports = router;
