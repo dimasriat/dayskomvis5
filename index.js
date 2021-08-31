@@ -7,60 +7,65 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 app.use("", express.static(path.join(__dirname, "public")));
 
-// BUKU TAMU
-app.get("/", (req, res) => {
-	// return res.render("buku_tamu");
-	return res.redirect("/home");
-});
-app.post("/", (req, res) => {
-	return res.redirect("/home");
-});
+// // BUKU TAMU
+// app.get("/", (req, res) => {
+// 	// return res.render("buku_tamu");
+// 	return res.redirect("/home");
+// });
+// app.post("/", (req, res) => {
+// 	return res.redirect("/home");
+// });
 
-// HOME
-app.get("/home", (req, res) => {
-	return res.render("index", { pageName: "/home" });
-});
+// // HOME
+// app.get("/home", (req, res) => {
+// 	return res.render("index", { pageName: "/home" });
+// });
 
-// PAMERAN
-function shuffle(array) {
-	var currentIndex = array.length,
-		randomIndex;
+app.use('/', require('./routes/homeRouter'));
+app.use('/tentang', require('./routes/tentangRouter'));
+app.use('/pameran', require('./routes/pameranRouter'));
+app.use('/lomba', require('./routes/lombaRouter'));
 
-	// While there remain elements to shuffle...
-	while (currentIndex != 0) {
-		// Pick a remaining element...
-		randomIndex = Math.floor(Math.random() * currentIndex);
-		currentIndex--;
+// // PAMERAN
+// function shuffle(array) {
+// 	var currentIndex = array.length,
+// 		randomIndex;
 
-		// And swap it with the current element.
-		[array[currentIndex], array[randomIndex]] = [
-			array[randomIndex],
-			array[currentIndex],
-		];
-	}
+// 	// While there remain elements to shuffle...
+// 	while (currentIndex != 0) {
+// 		// Pick a remaining element...
+// 		randomIndex = Math.floor(Math.random() * currentIndex);
+// 		currentIndex--;
 
-	return array;
-}
-app.get("/pameran", (req, res) => {
-	const pameran = shuffle(api.pameran);
-	return res.render("pameran", { pageName: "/pameran", pameran });
-});
+// 		// And swap it with the current element.
+// 		[array[currentIndex], array[randomIndex]] = [
+// 			array[randomIndex],
+// 			array[currentIndex],
+// 		];
+// 	}
 
-// LOMBA
-app.get("/lomba", (req, res) => {
-	return res.render("lomba", { pageName: "/lomba" });
-});
-app.get("/lomba/poster", (req, res) => {
-	return res.render("lomba_poster", { pageName: "/lomba" });
-});
-app.get("/lomba/fotografi", (req, res) => {
-	return res.render("lomba_fotografi", { pageName: "/lomba" });
-});
+// 	return array;
+// }
+// app.get("/pameran", (req, res) => {
+// 	const pameran = shuffle(api.pameran);
+// 	return res.render("pameran", { pageName: "/pameran", pameran });
+// });
 
-// TENTANG
-app.get("/tentang", (req, res) => {
-	return res.render("tentang", { pageName: "/tentang" });
-});
+// // LOMBA
+// app.get("/lomba", (req, res) => {
+// 	return res.render("lomba", { pageName: "/lomba" });
+// });
+// app.get("/lomba/poster", (req, res) => {
+// 	return res.render("lomba_poster", { pageName: "/lomba" });
+// });
+// app.get("/lomba/fotografi", (req, res) => {
+// 	return res.render("lomba_fotografi", { pageName: "/lomba" });
+// });
+
+// // TENTANG
+// app.get("/tentang", (req, res) => {
+// 	return res.render("tentang", { pageName: "/tentang" });
+// });
 
 // TESTINGGG
 app.get("/pug", (req, res) => res.send("see 🥰"));
