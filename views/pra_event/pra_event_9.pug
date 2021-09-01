@@ -1,0 +1,31 @@
+extends layout.pug
+
+block content
+	div(class="w-full py-8 min-h-screen" style="color: #14163F;")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pra_event/asset_${karya.id}/banner.png` class="w-full")
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full")
+			div(class="text-4xl font-bold text-left")= karya.judul
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			p(class="text-justify text-md py-24")
+				| Tujuan dari perancangan komik edukasi ini yaitu agar dapat mengenalkan virus covid-19 pada anak-anak usia sekolah dasar dan cara pencegahannya agar tidak terpapar virus. Alasan dibuat dalam bentuk komik adalah agar anak-anak tidak bosan mempelajarinya sekaligus terhibur dalam bentuk cerita bergambar.
+			div(class=`w-full`)
+				img(src=`/img/pra_event/asset_${karya.id}/pic1.png`)
+			div(class="py-24")
+				a(href="https://drive.google.com/file/d/1IFA5xCwYH_5J8bP4h-GCJhkBbBpVUqQN/view?usp=sharing" class="p-4 text-white w-full flex justify-center rounded-xl hover:underline text-center" style="background-color: #F78F07;")
+					| Lihat Selengkapnya →
+			div(class="py-24")
+				p(class="text-center text-3xl" style="color: #14163F;" ) Karya Pendukung
+			div(class=`w-full`)
+				img(src=`/img/pra_event/asset_${karya.id}/pic2.png`)
+			div(class="mt-24 py-12 flex flex-col justify-center items-center")
+				div(class="flex flex-col justify-center items-center")
+					img(src=`/img/pra_event/asset_${karya.id}/kreator.png` class="w-48")
+					p(class="text-3xl mt-4 text-center" style="color: #14163F;")= karya.kreator
+					p(class="text-xl mt-4") D-3 DKV 2018
+
+					div
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Sosial Media
+						p(class="text-sm mt-2") @#{karya.instagram}
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Portofolio
+						p(class="text-sm mt-2") Deviantart : Huki Koi
