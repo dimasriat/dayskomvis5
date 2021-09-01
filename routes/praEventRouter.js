@@ -3,9 +3,12 @@ const router = express.Router();
 const api = require("../models/api.json");
 
 // pra event
-function shuffle(array) {
+function shuffle(array, active = true) {
 	var currentIndex = array.length,
 		randomIndex;
+
+	if (!active) 
+		return array;
 
 	// While there remain elements to shuffle...
 	while (currentIndex != 0) {
@@ -23,7 +26,7 @@ function shuffle(array) {
 	return array;
 }
 router.get("/", (req, res) => {
-	const pra_event = shuffle(api.pra_event);
+	const pra_event = shuffle(api.pra_event, false);
 	return res.render("pra_event", { pageName: "/pra-event", pra_event });
 });
 for (let id = 1; id <= 20; id++) {
@@ -34,34 +37,5 @@ for (let id = 1; id <= 20; id++) {
 		});
 	});
 }
-// router.get("/1", (req, res) => {
-// 	const id = 1;
-// 	return res.render(`pra_event/pra_event_${id}`, {
-// 		pageName: "/pra-event",
-// 		karya: api.pra_event[id - 1],
-// 	});
-// });
-// router.get("/3", (req, res) => {
-// 	const id = 3;
-// 	return res.render(`pra_event/pra_event_${id}`, {
-// 		pageName: "/pra-event",
-// 		karya: api.pra_event[id - 1],
-// 	});
-// });
-// router.get("/5", (req, res) => {
-// 	const id = 5;
-// 	return res.render(`pra_event/pra_event_${id}`, {
-// 		pageName: "/pra-event",
-// 		karya: api.pra_event[id - 1],
-// 	});
-// });
-// router.get("/15", (req, res) => {
-// 	const id = 15;
-// 	return res.render(`pra_event/pra_event_${id}`, {
-// 		pageName: "/pra-event",
-// 		karya: api.pra_event[id - 1],
-// 	});
-// });
-
 
 module.exports = router;

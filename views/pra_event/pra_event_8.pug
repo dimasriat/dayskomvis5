@@ -1,0 +1,32 @@
+extends layout.pug
+
+block content
+	div(class="w-full py-8 min-h-screen" style="color: #14163F;")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pra_event/asset_${karya.id}/banner.png` class="w-full")
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full")
+			div(class="text-4xl font-bold text-left")= karya.judul
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			p(class="text-justify text-md py-24") Metor Head merupakan salah satu usaha gelang tali handmade yang berasal dari Sukoharjo. Untuk menjangkau pemasaran di seluruh Indonesia serta menembus pasar internasional. Metor Head memerlukan media promosi baru yang dapat diakses dimana pun dan kapan pun. Salah satu solusinya adalah dengan menggunakan website.
+				br
+				| Tampilan pada website atau yang disebut User Interface berperan penting untuk menarik calon pembeli. Oleh karena itu, saya membuat desain User Interface website Metor Head versi desktop ini dengan tema minimalist nature sesuai branding dari toko Metor Head.
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full mb-24 grid grid-cols-1 gap-4")
+			img(src=`/img/pra_event/asset_${karya.id}/pic1.png` class="w-full")
+			img(src=`/img/pra_event/asset_${karya.id}/pic2.png` class="w-full")
+			div(class="w-full rounded-lg text-center my-12 p-4 flex flex-col items-center" style="background-color: #F6F6F6; color: #72727A;")
+				p Menuju website Metor Head versi dekstop
+				img(src=`/img/pra_event/asset_${karya.id}/qr.png` class="w-48")
+				a(href="https://xd.adobe.com/view/8a01547b-99e7-4c50-af24-c81548ba9efb-df52/?fullscreen&hints=off" class="hover:underline")
+					| https://xd.adobe.com/view/8a01547b-99e7-4c50-af24-c81548ba9efb-df52/?fullscreen&hints=off
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			div(class="py-12 flex flex-col justify-center items-center")
+				div(class="flex flex-col justify-center items-center")
+					img(src=`/img/pra_event/asset_${karya.id}/kreator.png` class="w-48")
+					p(class="text-3xl mt-4" style="color: #14163F;")= karya.kreator
+					p(class="text-xl mt-4") D-3 DKV 2018
+
+					div
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Sosial Media
+						p(class="text-sm mt-2") @#{karya.instagram}
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Portofolio
+						p(class="text-sm mt-2") -
