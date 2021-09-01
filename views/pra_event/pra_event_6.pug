@@ -1,0 +1,46 @@
+extends layout.pug
+
+block content
+	div(class="w-full py-8 min-h-screen" style="color: #14163F;")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pra_event/asset_${karya.id}/banner.png` class="w-full")
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full")
+			div(class="text-4xl font-bold text-left")= karya.judul
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full flex justify-center" style="color: #72727A;")
+			p(class="w-3/4 text-center text-md py-24") Karya ini merupakan cerita anak yang menyajikan edukasi tentang bagaimana menjaga kesehatan gigi dan mulut dengan menarik.
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full flex justify-center" style="color: #72727A;")
+			div(class="w-full grid grid-cols-1 md:grid-cols-2 gap-4")
+				div(class=`w-full`)
+					img(src=`/img/pra_event/asset_${karya.id}/g1.png` class="")
+				div(class=`w-full`)
+				div(class=`w-full`)
+					img(src=`/img/pra_event/asset_${karya.id}/g2.png` class="")
+				div(class=`w-full`)
+					img(src=`/img/pra_event/asset_${karya.id}/g3.png` class="")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pra_event/asset_${karya.id}/banner2.png` class="w-full")
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full flex justify-center" style="color: #72727A;")
+			div(class="w-full py-4")
+				a(href="https://drive.google.com/file/d/1l6ZJRB5EgwLlQdL3TSgrZLVsyak7xHv4/view?usp=sharing" class="p-4 text-white w-full flex justify-center rounded-xl hover:underline text-center" style="background-color: #F78F07;")
+					| Lihat Selengkapnya →
+		div(class="mt-48 mx-auto container px-4 md:px-24 lg:px-48 w-full h-full flex justify-center" style="color: #72727A;")
+			div(class="w-full grid grid-cols-1 md:grid-cols-2 gap-4")
+				div(class=`w-full`)
+				div(class=`w-full`)
+					p Bukan hanya buku, karya ini juga disertai dengan karya-karya pendukung yang menarik bagi anak.
+				div(class=`w-full`)
+					img(src=`/img/pra_event/asset_${karya.id}/g4.png` class="")
+				div(class=`w-full`)
+					img(src=`/img/pra_event/asset_${karya.id}/g5.png` class="")
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full mt-48 " style="color: #72727A;")
+			div(class="py-12 flex flex-col justify-center items-center")
+				div(class="flex flex-col justify-center items-center")
+					img(src=`/img/pra_event/asset_${karya.id}/kreator.png` class="w-48")
+					p(class="text-3xl mt-4" style="color: #14163F;")= karya.kreator
+					p(class="text-xl mt-4") D-3 DKV 2018
+
+					div
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Sosial Media
+						p(class="text-sm mt-2") @#{karya.instagram}
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Portofolio
+						p(class="text-sm mt-2") behance: Dinda Maulida
