@@ -1,6 +1,5 @@
 const express = require("express");
 const path = require("path");
-const api = require("./models/api.json");
 
 const app = express();
 app.set("views", path.join(__dirname, "views"));
