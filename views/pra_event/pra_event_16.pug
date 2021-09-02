@@ -1,0 +1,42 @@
+extends layout.pug
+
+block content
+	div(class="w-full py-8 min-h-screen" style="color: #14163F;")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pra_event/asset_${karya.id}/banner.png` class="w-full")
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full")
+			div(class="text-4xl font-bold text-left")= karya.judul
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			p(class="text-justify text-md py-24")
+				| Kecerdasan naturalis merupakan kecerdasan yang penting untuk dirangsang sejak dini, agar memiliki sikap ramah lingkungan yang dapat menjaga makhluk hidup dan alam sekitar hingga masa depan. Buku karangan Fadila Hanum berjudul “Kami Dijadikan Pupuk” memenuhi kategori yang mampu mendukung hal tersebut.
+				br
+				br
+				| Perancangan kembali buku cerita bergambar ini disajikan dengan menampilkan alternatif dari segi style, layout, pemilihan warna, pemilihan jenis font yang lebih menarik dan lebih tepat untuk dibaca sesuai segmentasinya. Selain itu, agar anak-anak mudah memahami dan menangkap isi cerita, sehingga kecerdasan naturalis dalam dirinya secara tidak langsung akan berkembang.
+
+			p(class="text-center text-3xl" style="color: #14163F;" ) Karya Utama
+			div(class=`w-full py-24`)
+				img(src=`/img/pra_event/asset_${karya.id}/pic1.png`)
+				p(class="text-center mt-8") Buku ini bercerita tentang Dapi yang sedih karena ia merasa setelah tidak terpakai, ia hanya akan menjadi sampah. Namun, pada suatu hari Dapi tidak dibuang ke tempat sampah tetapi dibawa ke halaman belakang, dan akan dijadikan pupuk kompos yang bermanfaat.
+
+			div(class=`w-full py-24`)
+				img(src=`/img/pra_event/asset_${karya.id}/pic2.png`)
+			div(class=`w-full py-24`)
+				img(src=`/img/pra_event/asset_${karya.id}/pic3.png`)
+			div(class=`w-full py-24`)
+				img(src=`/img/pra_event/asset_${karya.id}/pic4.png`)
+
+			p(class="text-center text-3xl" style="color: #14163F;" ) Karya Pendukung
+			div(class=`w-full py-24`)
+				img(src=`/img/pra_event/asset_${karya.id}/pic5.png`)
+				
+			div(class="mt-24 py-12 flex flex-col justify-center items-center")
+				div(class="flex flex-col justify-center items-center")
+					img(src=`/img/pra_event/asset_${karya.id}/kreator.png` class="w-48")
+					p(class="text-3xl mt-4 text-center" style="color: #14163F;")= karya.kreator
+					p(class="text-xl mt-4") D-3 DKV 2018
+
+					div
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Sosial Media
+						p(class="text-sm mt-2") @#{karya.instagram}
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Portofolio
+						p(class="text-sm mt-2") issuu.com/ratnayuniar

@@ -1,0 +1,57 @@
+extends layout.pug
+
+block content
+	div(class="w-full py-8 min-h-screen" style="color: #14163F;")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pra_event/asset_${karya.id}/banner.png` class="w-full")
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full")
+			div(class="text-4xl font-bold text-left")= karya.judul
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			p(class="text-justify text-md py-24")
+				| Tujuan “Perancangan Desain Promosi Digital Labersa Toba Hotel & Convention Centre” adalah untuk memberikan gambaran kepada pihak hotel mengenai tampilan desain promosi produk yang akan dijual. Dengan pemilihan elemen-elemen desain yang tepat akan membuat orang dengan mudah mengingat hotel ini. 
+				br
+				br
+				| Untuk menarik perhatian calon pembeli, tentunya visual media promosi yang rapih, menarik, dan konsisten sangat penting untuk diperhatikan. Di sinilah peran para desainer grafis diperlukan. Para desainer grafis dapat merancang desain yang menarik dan komunikatif.
+
+			p(class="text-center text-3xl" style="color: #14163F;" ) Media Utama
+			div(class=`w-full py-24`)
+				p(class="text-left mb-8") Feeds Instagram
+				img(src=`/img/pra_event/asset_${karya.id}/pic1.png`)
+			div(class=`w-full py-24`)
+				p(class="text-left mb-8") Banner Facebook
+				img(src=`/img/pra_event/asset_${karya.id}/pic2.png`)
+			div(class=`w-full py-24`)
+				p(class="text-left mb-8") Instagram Stories
+				img(src=`/img/pra_event/asset_${karya.id}/pic3.png`)
+
+
+			p(class="text-center text-3xl" style="color: #14163F;" ) Media Pendukung
+			
+			div(class=`w-full py-24`)
+				p(class="text-left mb-8") Bros / Pin
+				img(src=`/img/pra_event/asset_${karya.id}/pic4.png`)
+			div(class=`w-full py-24`)
+				p(class="text-left mb-8") Kartu Nama
+				img(src=`/img/pra_event/asset_${karya.id}/pic5.png`)
+			div(class=`w-full py-24`)
+				p(class="text-left mb-8") Poster Promosi Produk
+				img(src=`/img/pra_event/asset_${karya.id}/pic6.png` class="mb-8")
+				img(src=`/img/pra_event/asset_${karya.id}/pic7.png` class="mb-8")
+				img(src=`/img/pra_event/asset_${karya.id}/pic8.png` class="mb-8")
+				img(src=`/img/pra_event/asset_${karya.id}/pic9.png` class="mb-8")
+				img(src=`/img/pra_event/asset_${karya.id}/pic10.png` class="mb-8")
+				
+			div(class="mt-24 py-12 flex flex-col justify-center items-center")
+				div(class="flex flex-col justify-center items-center")
+					img(src=`/img/pra_event/asset_${karya.id}/kreator.png` class="w-48")
+					p(class="text-3xl mt-4 text-center" style="color: #14163F;")= karya.kreator
+					p(class="text-xl mt-4") D-3 DKV 2018
+
+					div
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Sosial Media
+						p(class="text-sm mt-2")
+							| @#{karya.instagram}
+							br
+							| #{'@i.saiah7'}
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Portofolio
+						p(class="text-sm mt-2") issuu.com/ratnayuniar

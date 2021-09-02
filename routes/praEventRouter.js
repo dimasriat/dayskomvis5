@@ -29,7 +29,7 @@ router.get("/", (req, res) => {
 	const pra_event = shuffle(api.pra_event, false);
 	return res.render("pra_event", { pageName: "/pra-event", pra_event });
 });
-for (let id = 1; id <= 20; id++) {
+for (let id = 1; id <= 26; id++) {
 	router.get(`/${id}`, (req, res) => {
 		return res.render(`pra_event/pra_event_${id}`, {
 			pageName: "/pra-event",
