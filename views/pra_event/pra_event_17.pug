@@ -1,0 +1,32 @@
+extends layout.pug
+
+block content
+	div(class="w-full py-8 min-h-screen" style="color: #14163F;")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pra_event/asset_${karya.id}/banner.png` class="w-full")
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full")
+			div(class="text-4xl font-bold text-left")= karya.judul
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			p(class="text-justify text-md py-24")
+				| Bridge SA adalah, nama sebuah usaha yang berada di Kota Madiun. Bridge SA sendiri sudah ada sejak dari 14 februari 2020 Bridge SA merupakan produk sepatu yang di khususkan untuk para anak muda maupun pemain Skateboard, Bridge SA sendiri baru memiliki satu varian sepatu yaitu bernama Cleon.
+
+			div(class="w-full flex justify-center item-center my-24 rounded-xl shadow-xl overflow-hidden" style="background-color: #EFC12E;")
+				iframe(class="w-full" height="480" src="https://www.youtube.com/embed/x5cFQSm0pgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+			
+			p(class="text-center text-3xl" style="color: #14163F;" ) Karya Pendukung
+			div(class=`w-full py-24`)
+				img(src=`/img/pra_event/asset_${karya.id}/pic1.png`)
+				img(src=`/img/pra_event/asset_${karya.id}/pic2.png`)
+				p(class="text-center mt-8") “Ngeluh tetapi tetap dikerjaian.”
+			
+			div(class="mt-24 py-12 flex flex-col justify-center items-center")
+				div(class="flex flex-col justify-center items-center")
+					img(src=`/img/pra_event/asset_${karya.id}/kreator.png` class="w-48")
+					p(class="text-3xl mt-4 text-center" style="color: #14163F;")= karya.kreator
+					p(class="text-xl mt-4") D-3 DKV 2018
+
+					div
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Sosial Media
+						p(class="text-sm mt-2") @#{karya.instagram}
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Portofolio
+						p(class="text-sm mt-2") Behance : Rifqi Taufiiqul Huda
