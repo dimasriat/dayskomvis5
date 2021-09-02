@@ -1,0 +1,38 @@
+extends layout.pug
+
+block content
+	div(class="w-full py-8 min-h-screen" style="color: #14163F;")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pra_event/asset_${karya.id}/banner.png` class="w-full")
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full")
+			div(class="text-4xl font-bold text-left")= karya.judul
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			p(class="text-justify text-md py-24")
+				| Widodo Stamp, yaitu sebuah usaha yang bergerak dibidang Jasa, didirikan oleh Bapak Junaedi yang berlokasi di Salatiga, Jawa Tengah, Indonesia. Awalnya, usaha ini hanya melayani jasa pembuatan stempel kayu, stempel flash, dan isi tinta stempel. Namun seiring berjalannya waktu, kini melayani berbagai jasa seperti pembuatan nama dada, pembuatan id card, pembuatan spanduk, dan lain-lain.
+			
+			p(class="text-center text-3xl" style="color: #14163F;" ) Media Utama
+			div(class=`w-full py-24`)
+				img(src=`/img/pra_event/asset_${karya.id}/pic1.png` class="w-full mb-16")
+				img(src=`/img/pra_event/asset_${karya.id}/pic2.png` class="w-full mb-16")
+			
+			div(class="w-full rounded-lg text-center my-12 p-4 flex flex-col items-center" style="background-color: #F6F6F6; color: #72727A;")
+				p view this book in full by scan the qr code or accesing this link:
+				img(src=`/img/pra_event/asset_${karya.id}/qr.png` class="w-48 my-8")
+				a(href="https://bit.ly/3DtZjHi" class="hover:underline")
+					| https://bit.ly/3DtZjHi
+			
+			p(class="text-center text-3xl" style="color: #14163F;" ) Karya Pendukung
+			div(class=`w-full py-24`)
+				img(src=`/img/pra_event/asset_${karya.id}/pic3.png` class="w-full mb-16")
+			
+			div(class="mt-24 py-12 flex flex-col justify-center items-center")
+				div(class="flex flex-col justify-center items-center")
+					img(src=`/img/pra_event/asset_${karya.id}/kreator.png` class="w-48")
+					p(class="text-3xl mt-4 text-center" style="color: #14163F;")= karya.kreator
+					p(class="text-xl mt-4") D-3 DKV 2018
+
+					div
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Sosial Media
+						p(class="text-sm mt-2") @#{karya.instagram}
+						p(class="text-sm mt-8 font-bold" style="color: #14163F;") Portofolio
+						p(class="text-sm mt-2") Behance : vivianadiva
