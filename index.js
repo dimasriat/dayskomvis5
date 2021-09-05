@@ -18,15 +18,18 @@ app.use((req, res, next) => {
 	const date = new Date();
 	const date_now = `${date.toISOString().split("T")[0]} ${
 		date.toTimeString().split(" ")[0]
-	}`; 
+	}`;
 	if (req.originalUrl === "/buku-tamu" && req.method === "POST") {
 		req.session.buku_tamu = date_now;
-		db.query("insert into buku_tamu (nama, asal, timestamp) values (?, ?, ?)", [
-			req.body.nama,
-			req.body.asal,
-			date_now,
-		]);
-		res.redirect(req.body.next_url);
+		db.query(
+			"insert into buku_tamu (nama, asal, timestamp) values (?, ?, ?)",
+			[req.body.nama, req.body.asal, date_now]
+		);
+		if (req.body.next_url === "/") {
+			res.redirect("/home");
+		} else {
+			res.redirect(req.body.next_url);
+		}
 	} else {
 		if (req.session.buku_tamu) {
 			req.session.buku_tamu = date_now;
