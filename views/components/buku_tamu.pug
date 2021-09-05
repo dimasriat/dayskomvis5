@@ -12,7 +12,8 @@ div(class="w-full min-h-screen flex" style="color: #14163F;")
 		div(class="w-full flex justify-center")
 			img(src="/img/logo.png" class="h-24 mr-2 lg:invisible")
 		div(class="w-full flex justify-center mt-12")
-			form(method="post" action="/" class="flex flex-col")
+			form(method="post" action="/buku-tamu" class="flex flex-col" id="buku_tamu")
+				input(type="hidden", name="next_url" value=`${next_url}`)
 				p(class="text-xl")
 					| Sebelum masuk, ngisi 
 					b Buku Tamu 
@@ -22,7 +23,7 @@ div(class="w-full min-h-screen flex" style="color: #14163F;")
 				label(for="asal" class="mt-8 mb-3 font-bold") Asal
 				input(type="text" id="asal" name="asal" class="bg-gray-200 p-3 rounded-xl")
 				div(class="flex justify-end mt-8 mb-3")
-					input(type="submit", value="Masuk →" class="p-3 rounded-xl text-white" style="background-color: #F0572B;")
+					input(type="button" onclick="submit_buku_tamu();" value="Masuk →" class="p-3 rounded-xl text-white" style="background-color: #F0572B;")
 		
 		div(class="w-full py-2 mt-16 text-center lg:hidden")
 			p 2021. All Rights Reserved
