@@ -44,6 +44,7 @@ app.use("/", require("./routes/homeRouter"));
 app.use("/tentang", require("./routes/tentangRouter"));
 app.use("/pra-event", require("./routes/praEventRouter"));
 app.use("/lomba", require("./routes/lombaRouter"));
+app.use("/webinar", require("./routes/webinarRouter"));
 
 app.get("/pug", (req, res) => res.send(req.originalUrl));
 
