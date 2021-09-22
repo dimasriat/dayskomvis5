@@ -601,9 +601,42 @@
 		},
 		{
 			"id": 11,
-			"judul": "Batikin",
-			"kreator": "Faro, Restu, Rezky, Najib, Bintang, Devina, Diwai, Irna, Kahfi",
-			"preview": "Mengenalkan kembali budaya warisan nenek moyang yaitu batik yang sudah mulai tidak dikenali oleh anak muda jaman sekarang."
+			"judul": "Ório Kai Doreán",
+			"kreator": "Gayuh, Gendis, Irma, Retno, Damar, Rafid, Chikin",
+			"preview": "Memiliki arti Bebas dan Batas. Mmengapa? Karena disesuaikan dengan kondisi pada saat ini. untuk itu kami membuat E-book untuk menjelaskan beberapa keadaan yang ada di daerah sekitar kita. Serta beberapa tips untuk menghilangkan rasa bosan selama dirumah",
+			"kreator_detail": {
+				"team" : "Chick-End",
+				"member": [
+					{
+						"nama": "Gayuh",
+						"sosmed": "@gayuhmahardika_"
+					},
+					{
+						"nama": "Irma",
+						"sosmed": "@irmaoctaviani_"
+					},
+					{
+						"nama": "Palupi",
+						"sosmed": "@pipiipalupi"
+					},
+					{
+						"nama": "Gendhis",
+						"sosmed": "@gndsskr_"
+					},
+					{
+						"nama": "Damar",
+						"sosmed": "@damar_art29"
+					},
+					{
+						"nama": "Chikien",
+						"sosmed": "@dhxxlacha"
+					},
+					{
+						"nama": "Rafid",
+						"sosmed": "@rafidash_"
+					}
+				]
+			}
 		},
 		{
 			"id": 12,
