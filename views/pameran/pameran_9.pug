@@ -1,0 +1,122 @@
+extends layout.pug
+
+block content
+	div(class="w-full py-8 min-h-screen" style="color: #14163F;")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pameran/asset_${karya.id}/banner.png` class="w-full")
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full")
+			div(class="text-4xl font-bold text-left")= karya.judul
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			p(class="text-justify text-md my-12")
+				| Solusign, sebuah penciptaan sign system sebagai solusi bersama.
+				br
+				br
+				| Tingkat kepedulian masyarakat yang rendah terhadap sign system/penanda. Sering diacuhkan karena informasi atau visual yang kurang menarik. Serta di masa pandemi ini sign system juga sangat diperlukan untuk mengatur kebiasaan baru di masyarakat seperti menjaga jarak, cuci tangan, menjauhi kerumunan dan sebagainya.
+				br
+				br
+				| Sign system merupakan suatu sistem penandaan yang begitu penting dan diperlukan di kehidupan ini, selain sebagai petunjuk, penamaan, penyampaian informasi singkat, dapat juga berupa aturan-aturan atau norma-norma yang dipakai dan diakui pada tempat tertentu dan dapat dimengerti oleh warga masyarakatnya. 
+				br
+				br
+				| Sebagaimana yang kita ketahui bahwa sebuah gedung pasti sering dikunjungi oleh para pengunjung dengan kepentingan tertentu, dan setelah kami melakukan survey lapangan, Sekolah Vokasi UNS masih tergolong kurang optimal dalam memberikan informasi kepada masyarakat. Hal ini dapat terlihat bahwa hanya ada beberapa ruangan saja yang memiliki sign system. 
+				br
+				br
+				| Karya kami yang berjudul " Solusign " ini kami rancang sebagai bentuk reaksi kami terhadap Sekolah Vokasi UNS setelah melihat permasalahan di atas,
+
+			div(class="text-4xl font-bold text-left" style="color: #14163F;") Opening
+			p(class="text-justify text-md my-12")
+				| Dalam sebuah konten terutama di Youtube, opening sangatlah penting. Kita dituntut memiliki kreativitas yang tinggi agar bisa menampilkan opening yang menarik. Durasi ideal yang diperlukan dalam memutar Opening ialah 10 sampai 30 Detik, karena di durasi inilah merupakan durasi yang sangat vital, karena di durasi ke detik 30 penonton bisa menilai bahwa video tersebut layak untuk mereka tonton atau tidak.
+				br
+				br
+				| Hal inilah yang membuat kami berinisiatif untuk membuatkan opening dari konten podcast Om Deddy Corbuzier dalam bentuk animasi. Teknik animasi kami pilih karena menurut kami teknik ini cocok untuk semua kalangan.
+				
+			div(class="w-full flex justify-center item-center my-16 rounded-xl shadow-xl overflow-hidden bg-purple-600")
+				iframe(class="w-full" height="480" src="https://www.youtube.com/embed/qR-mAB04Q-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
+		div(class="w-full py-12" style=`background-image: url('/img/pameran/asset_${karya.id}/bg.png'); background-position: right;`)
+			div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+				div(class="text-4xl font-bold text-left" style="color: #14163F;") Emoji Kustom Membership
+				p(class="text-justify text-md my-12")
+					| Emoji mebership ini diberikan kepada mereka yang berlangganan di channel Deddy Corbuzier. Emoji ekslusif ini bisa digunakan di kolom komentar maupun live chat. Emoji membuat kolom komentar dan live chat menjadi lebih interaktif dan lebih menarik.
+					br
+					br
+					| Berikut beberapa contoh stiker membership yang kami sediakan.
+				div(class="text-4xl font-bold text-left" style="color: #14163F;") Package 1
+				p(class="text-justify text-md my-12")
+					| Pada package ini kami membuat ilustrasi chibi wajah om Deddy Corbuzier.
+				div(class="flex flex-col items-center md:flex-row md:flex-wrap md:justify-center mb-12")
+					div(class="px-4 w-full md:w-1/3 mt-12")
+						div(class="py-4 flex flex-col items-center text-center")
+							img(src=`/img/pameran/asset_${karya.id}/f1.png` class="w-full")
+					div(class="px-4 w-full md:w-1/3 mt-12")
+						div(class="py-4 flex flex-col items-center text-center")
+							img(src=`/img/pameran/asset_${karya.id}/f2.png` class="w-full")
+					div(class="px-4 w-full md:w-1/3 mt-12")
+						div(class="py-4 flex flex-col items-center text-center")
+							img(src=`/img/pameran/asset_${karya.id}/f3.png` class="w-full")
+					div(class="px-4 w-full md:w-1/3 mt-12")
+						div(class="py-4 flex flex-col items-center text-center")
+							img(src=`/img/pameran/asset_${karya.id}/f4.png` class="w-full")
+					div(class="px-4 w-full md:w-1/3 mt-12")
+						div(class="py-4 flex flex-col items-center text-center")
+							img(src=`/img/pameran/asset_${karya.id}/f5.png` class="w-full")
+				div(class="text-4xl font-bold text-left" style="color: #14163F;") Package 2
+				p(class="text-justify text-md my-12")
+					| Pada package emoji ini kami membuat Anom, yaitu maskot Dayskomvis dalam bentuk chibi. Kami berharap jika hal ini diterapkan Dayskomvis juga bisa ikut dikenal secara luas.
+				div(class="flex flex-col items-center md:flex-row md:flex-wrap md:justify-center mb-12")
+					div(class="px-4 w-full md:w-1/3 mt-12")
+						div(class="py-4 flex flex-col items-center text-center")
+							img(src=`/img/pameran/asset_${karya.id}/g1.png` class="w-full")
+					div(class="px-4 w-full md:w-1/3 mt-12")
+						div(class="py-4 flex flex-col items-center text-center")
+							img(src=`/img/pameran/asset_${karya.id}/g2.png` class="w-full")
+					div(class="px-4 w-full md:w-1/3 mt-12")
+						div(class="py-4 flex flex-col items-center text-center")
+							img(src=`/img/pameran/asset_${karya.id}/g3.png` class="w-full")
+					div(class="px-4 w-full md:w-1/3 mt-12")
+						div(class="py-4 flex flex-col items-center text-center")
+							img(src=`/img/pameran/asset_${karya.id}/g4.png` class="w-full")
+					div(class="px-4 w-full md:w-1/3 mt-12")
+						div(class="py-4 flex flex-col items-center text-center")
+							img(src=`/img/pameran/asset_${karya.id}/g5.png` class="w-full")
+
+			
+		div(class="py-12" style="color: #72727A;")
+			div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+				div(class="text-4xl font-bold text-left" style="color: #14163F;") Badge Membership
+				p(class="text-justify text-md my-12")
+					| Dengan badge eksklusif khusus pelanggan, pelanggan akan terlihat menonjol dalam live chat, komentar, dan Tab Komunitas. Badge yang ditampilkan tergantung berapa lama pemirsa podcast berlangganan pada komunitas chanel Deddy Corbuzier. Untuk chanel Deddy Corbuzier kami menyiapkan 3 Badge yaitu:
+					br
+					br
+					| 1. Bronze  : Untuk yang baru saja berlangganan sampai 2 bulan 
+					br
+					| 2. Silver     : Untuk yang berlangganan lebih dari 2 bulan sampai 6 bulan
+					br
+					| 3. Gold      : Untuk yang sudah lebih dari 6 bulan berlangganan					
+				img(src=`/img/pameran/asset_${karya.id}/pic1.png` class="w-full mb-24")
+
+				div(class="text-4xl font-bold text-left" style="color: #14163F;") Contoh Pengaplikasian
+				p(class="text-justify text-md my-12")
+					| Berikut adalah penampakan Badge dan emoji membership, jika sudah digunakan.
+				img(src=`/img/pameran/asset_${karya.id}/pic2.png` class="w-full mb-24 rounded-xl")
+
+				div(class="text-4xl font-bold text-left" style="color: #14163F;") Merchandise 
+				p(class="text-justify text-md my-12")
+					| Saat merchandise digunakan, promosi sebenarnya sedang terjadi secara gratis. Para pengguna merchandise seperti sebuah billboard berjalan yang menampilkan pesan tentang merek dan perusahaan, tanpa kita membayar khusus mereka sebagai bagian dari periklanan. Melihat efek eksponensial seperti ini, maka kamu membuat desain merchandise yang menarik perhatian.
+				img(src=`/img/pameran/asset_${karya.id}/pic3.png` class="w-full mb-24 rounded-xl")
+				img(src=`/img/pameran/asset_${karya.id}/pic4.png` class="w-full mb-24 rounded-xl")
+				p(class="text-center text-md my-12")
+					| Sekian karya dari kami, kami berharap karya ini bisa menjadi refresi tentang pentingnya desain grafis dalam dunia perindustrian youtube dan tentunya kami juga berharap karya ini bisa dilihat langsung oleh om Deddy Corbuzier. Terima kasih.
+
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			div(class="mt-24 py-12 flex flex-col justify-center items-center")
+				div(class="flex flex-col justify-center items-center")
+					img(src=`/img/pameran/asset_${karya.id}/team_logo.png` class="w-32")
+					p(class="text-3xl mt-4 text-center font-bold" style="color: #14163F;")= karya.kreator_detail.team
+					
+					div(class="flex flex-wrap justify-center")
+						each member in karya.kreator_detail.member
+							div(class="px-4 w-32 md:w-40 mt-12")
+								div(class="py-4 flex flex-col items-center text-center")
+									img(src=`/img/pameran/asset_${karya.id}/kreator_${member.nama.split(' ').join('_').toLowerCase()}.png` class="")
+									div(class="mt-8 font-bold" style="color: #363636")= member.nama
+									div(class="mt-2 text-sm")= member.sosmed

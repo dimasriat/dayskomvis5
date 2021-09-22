@@ -1,0 +1,68 @@
+extends layout.pug
+
+block content
+	div(class="w-full py-8 min-h-screen" style="color: #14163F;")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pameran/asset_${karya.id}/banner.png` class="w-full")
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full")
+			div(class="text-4xl font-bold text-left")= karya.judul
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			div(class="px-8")
+				p(class="text-center text-md my-12")
+					| Solusign, sebuah penciptaan sign system sebagai solusi bersama.
+					br
+					br
+					| Tingkat kepedulian masyarakat yang rendah terhadap sign system/penanda. Sering diacuhkan karena informasi atau visual yang kurang menarik. Serta di masa pandemi ini sign system juga sangat diperlukan untuk mengatur kebiasaan baru di masyarakat seperti menjaga jarak, cuci tangan, menjauhi kerumunan dan sebagainya.
+					br
+					br
+					| Sign system merupakan suatu sistem penandaan yang begitu penting dan diperlukan di kehidupan ini, selain sebagai petunjuk, penamaan, penyampaian informasi singkat, dapat juga berupa aturan-aturan atau norma-norma yang dipakai dan diakui pada tempat tertentu dan dapat dimengerti oleh warga masyarakatnya. 
+					br
+					br
+					| Sebagaimana yang kita ketahui bahwa sebuah gedung pasti sering dikunjungi oleh para pengunjung dengan kepentingan tertentu, dan setelah kami melakukan survey lapangan, Sekolah Vokasi UNS masih tergolong kurang optimal dalam memberikan informasi kepada masyarakat. Hal ini dapat terlihat bahwa hanya ada beberapa ruangan saja yang memiliki sign system. 
+					br
+					br
+					| Karya kami yang berjudul " Solusign " ini kami rancang sebagai bentuk reaksi kami terhadap Sekolah Vokasi UNS setelah melihat permasalahan di atas,
+
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pameran/asset_${karya.id}/banner2.png` class="w-full")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pameran/asset_${karya.id}/banner3.png` class="w-full")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pameran/asset_${karya.id}/banner4.png` class="w-full")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pameran/asset_${karya.id}/banner5.png` class="w-full")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pameran/asset_${karya.id}/banner6.png` class="w-full")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pameran/asset_${karya.id}/banner7.png` class="w-full")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pameran/asset_${karya.id}/banner8.png` class="w-full")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pameran/asset_${karya.id}/banner9.png` class="w-full")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pameran/asset_${karya.id}/banner10.png` class="w-full")
+			
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			div(class=`w-full py-24 flex justify-center`)
+				a(href="https://www.instagram.com/solusign/" class="p-4 bg-blue-700 text-white rounded-xl text-center hover:underline")
+					| Buka Instagram
+			div(class="px-8")
+				p(class="text-center text-md my-12")
+					| Demikian perancangan Sign System Sekolah Vokasi UNS. 
+					br
+					| Dengan adanya solusign, diharapkan dapat menjadi solusi untuk kita semua. 
+					br
+					| Terima kasih.
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			div(class="mt-24 py-12 flex flex-col justify-center items-center")
+				div(class="flex flex-col justify-center items-center")
+					img(src=`/img/pameran/asset_${karya.id}/team_logo.png` class="w-32")
+					p(class="text-3xl mt-4 text-center font-bold" style="color: #14163F;")= karya.kreator_detail.team
+					
+					div(class="flex flex-wrap justify-center")
+						each member in karya.kreator_detail.member
+							div(class="px-4 w-32 md:w-40 mt-12")
+								div(class="py-4 flex flex-col items-center text-center")
+									img(src=`/img/pameran/asset_${karya.id}/kreator_${member.nama.split(' ').join('_').toLowerCase()}.png` class="")
+									div(class="mt-8 font-bold" style="color: #363636")= member.nama
+									div(class="mt-2 text-sm")= member.sosmed

@@ -1,0 +1,46 @@
+extends layout.pug
+
+block content
+	div(class="w-full py-8 min-h-screen" style="color: #14163F;")
+		div(class="w-full flex flex-col justify-center item-center py-24")
+			img(src=`/img/pameran/asset_${karya.id}/banner.png` class="w-full z-10")
+			div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full transform -translate-y-12" style="color: #72727A;")
+				img(src=`/img/pameran/asset_${karya.id}/pic1.png` class="w-full mb-24")
+				img(src=`/img/pameran/asset_${karya.id}/pic2.png` class="w-full mb-24")
+				img(src=`/img/pameran/asset_${karya.id}/pic3.png` class="w-full mb-24")
+				img(src=`/img/pameran/asset_${karya.id}/pic4.png` class="w-full mb-24 transform -translate-y-24")
+				img(src=`/img/pameran/asset_${karya.id}/pic5.png` class="w-full mb-24")
+				img(src=`/img/pameran/asset_${karya.id}/pic6.png` class="w-full mb-24")
+				img(src=`/img/pameran/asset_${karya.id}/pic7.png` class="w-full mb-24")
+		div(class="w-full flex flex-col justify-center item-center" style="background-color: #1a1a1a;")
+			img(src=`/img/pameran/asset_${karya.id}/banner2.png` class="hidden md:block w-full z-10 transform -translate-y-6")
+			div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+				img(src=`/img/pameran/asset_${karya.id}/pic8.png` class="w-full mb-24 mt-24")
+				img(src=`/img/pameran/asset_${karya.id}/pic9.png` class="w-full mb-24")
+				img(src=`/img/pameran/asset_${karya.id}/pic10.png` class="w-full mb-24")
+				img(src=`/img/pameran/asset_${karya.id}/pic11.png` class="w-full mb-24 transform -translate-y-24")
+				img(src=`/img/pameran/asset_${karya.id}/pic12.png` class="w-full mb-24")
+				img(src=`/img/pameran/asset_${karya.id}/pic13.png` class="w-full mb-24")
+				img(src=`/img/pameran/asset_${karya.id}/pic14.png` class="w-full mb-24")
+				img(src=`/img/pameran/asset_${karya.id}/pic15.png` class="w-full mb-24")
+				img(src=`/img/pameran/asset_${karya.id}/pic16.png` class="w-full mb-24")
+				img(src=`/img/pameran/asset_${karya.id}/pic17.png` class="w-full mb-24")
+				img(src=`/img/pameran/asset_${karya.id}/pic18.png` class="w-full mb-24")
+				div(class=`w-full py-24 flex justify-center`)
+					a(href="https://bit.ly/RambuLalu" class="p-4 bg-red-700 text-white rounded-xl text-center hover:underline")
+						| Download Stiker Di Sini
+			img(src=`/img/pameran/asset_${karya.id}/banner2.png` class="hidden md:block w-full z-10 transform translate-y-6")
+		
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			div(class="mt-24 py-12 flex flex-col justify-center items-center")
+				div(class="flex flex-col justify-center items-center")
+					img(src=`/img/pameran/asset_${karya.id}/team_logo.png` class="w-32")
+					p(class="text-3xl mt-4 text-center font-bold" style="color: #14163F;")= karya.kreator_detail.team
+					
+					div(class="flex flex-wrap justify-center")
+						each member in karya.kreator_detail.member
+							div(class="px-4 w-32 md:w-40 mt-12")
+								div(class="py-4 flex flex-col items-center text-center")
+									img(src=`/img/pameran/asset_${karya.id}/kreator_${member.nama.split(' ').join('_').toLowerCase()}.png` class="")
+									div(class="mt-8 font-bold" style="color: #363636")= member.nama
+									div(class="mt-2 text-sm")= member.sosmed
