@@ -1,0 +1,92 @@
+extends layout.pug
+
+block content
+	div(class="w-full py-8 min-h-screen" style="color: #14163F;")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pameran/asset_${karya.id}/banner.png` class="w-full")
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full")
+			div(class="text-4xl font-bold text-left")= karya.judul
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #14163F;")
+
+			div(class=`w-full py-12 flex justify-center`)
+				div(class="py-2 px-4 text-3xl rounded-full text-center")
+					| Karya Utama
+			div(class=`w-full md:px-16`)
+				img(src=`/img/pameran/asset_${karya.id}/pic1.png` class="w-full")
+			div(class="px-8")
+				p(class="text-center text-md py-12")
+					| Manusia memang memiliki pikiran yang beraneka ragam, bahkan banyak yang mengatakan bahwa pikiran manusia layaknya lubang yang tidak pernah diketahui kedalamannya. Untuk itu pemahaman masing-masing orang akan sebuah kejadian bisa saja sama namun tak menutup kemungkinan berbeda.
+
+			div(class=`w-full py-12 flex justify-center`)
+				div(class="py-2 px-4 text-3xl rounded-full text-center")
+					| Karya Pendukung
+			div(class="px-8")
+				p(class="text-center text-md pb-12")
+					| Setiap orang pasti memiliki pemikiran yang berbeda terkait cara memahami orang lain. Jadi berikut merupakan pendapat dari temen - temen bagaimana cara memahami orang lain.
+			div(class=`w-full md:px-16`)
+				img(src=`/img/pameran/asset_${karya.id}/pic2.png` class="w-full")
+
+			div(class=`w-full py-12 mt-12 flex justify-center`)
+				div(class="py-2 px-4 text-3xl rounded-full text-center")
+					| Video
+			div(class=`w-full md:px-16`)
+				img(src=`/img/pameran/asset_${karya.id}/pic3.png` class="w-full")
+			div(class="w-full flex justify-center item-center my-16 rounded-xl shadow-xl overflow-hidden bg-purple-600")
+				iframe(class="w-full" height="480" src="https://www.youtube.com/embed/3verBQN4wIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+			div(class="px-8")
+				p(class="text-center text-md pb-12")
+					| Pada video diatas menjelaskan tentang apa yang kita lihat dari orang lain tidak sama dengan apa yang sedang mereka rasakan
+
+
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #14163F;")
+			div(class=`w-full mt-12 flex justify-center`)
+				div(class="py-2 px-4 text-3xl rounded-full text-center")
+					| Stiker
+
+			div(class="flex flex-col items-center md:flex-row md:flex-wrap md:justify-center")
+				div(class="px-4 w-full md:w-1/3 mt-12")
+					div(class="py-4 flex flex-col items-center text-center")
+						img(src=`/img/pameran/asset_${karya.id}/f1.png` class="w-full")
+				div(class="px-4 w-full md:w-1/3 mt-12")
+					div(class="py-4 flex flex-col items-center text-center")
+						img(src=`/img/pameran/asset_${karya.id}/f2.png` class="w-full")
+				div(class="px-4 w-full md:w-1/3 mt-12")
+					div(class="py-4 flex flex-col items-center text-center")
+						img(src=`/img/pameran/asset_${karya.id}/f3.png` class="w-full")
+				div(class="px-4 w-full md:w-1/3 mt-12")
+					div(class="py-4 flex flex-col items-center text-center")
+						img(src=`/img/pameran/asset_${karya.id}/f4.png` class="w-full")
+				div(class="px-4 w-full md:w-1/3 mt-12")
+					div(class="py-4 flex flex-col items-center text-center")
+						img(src=`/img/pameran/asset_${karya.id}/f5.png` class="w-full")
+			div(class="w-full grid grid-cols-1 md:grid-cols-3 gap-4 py-24")
+				div(class=`w-full flex flex-col justify-center mb-8`)
+					img(src=`/img/pameran/asset_${karya.id}/g1.png` class="w-full")
+				div(class=`w-full flex flex-col justify-center mb-8`)
+					img(src=`/img/pameran/asset_${karya.id}/g2.png` class="w-full")
+				div(class=`w-full flex flex-col justify-center mb-8`)
+					img(src=`/img/pameran/asset_${karya.id}/g3.png` class="w-full")
+				div(class=`w-full flex flex-col justify-center mb-8`)
+					img(src=`/img/pameran/asset_${karya.id}/g4.png` class="w-full")
+				div(class=`w-full flex flex-col justify-center mb-8`)
+					img(src=`/img/pameran/asset_${karya.id}/g5.png` class="w-full")
+				div(class=`w-full flex flex-col justify-center mb-8`)
+					img(src=`/img/pameran/asset_${karya.id}/g6.png` class="w-full")
+			
+			div(class=`w-full py-24 flex justify-center`)
+				a(href="https://drive.google.com/file/d/1eshqNjRMJZmbL7juxG0ggUhHZ22tHq0a/view?usp=sharing" class="p-4 bg-blue-700 text-white rounded-xl text-center hover:underline")
+					| Download Stiker Disini
+
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			div(class="mt-24 py-12 flex flex-col justify-center items-center")
+				div(class="flex flex-col justify-center items-center")
+					img(src=`/img/pameran/asset_${karya.id}/team_logo.png` class="w-32")
+					p(class="text-3xl mt-4 text-center font-bold" style="color: #14163F;")= karya.kreator_detail.team
+					
+					div(class="flex flex-wrap justify-center")
+						each member in karya.kreator_detail.member
+							div(class="px-4 w-32 md:w-40 mt-12")
+								div(class="py-4 flex flex-col items-center text-center")
+									img(src=`/img/pameran/asset_${karya.id}/kreator_${member.nama.split(' ').join('_').toLowerCase()}.png` class="")
+									div(class="mt-8 font-bold" style="color: #363636")= member.nama
+									div(class="mt-2 text-sm")= member.sosmed

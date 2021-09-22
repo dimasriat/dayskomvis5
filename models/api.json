@@ -175,5 +175,478 @@
 			"instagram": "ahmadi_budi_utomo",
 			"preview": "Komentar yang baik dan sesuai dengan norma yang berlaku tidak hanya di dunia nyata saja tetapi juga berlaku di berbagai platform sosial media."
 		}
+	],
+	"pameran" : [
+		{
+			"id":1,
+			"judul": "Kenalanimal: Buku Edukasi Pintar",
+			"kreator": "Deven, Bagus, Al, Izumi, Candra, Aulia, Viona, Tiwi",
+			"preview": "Perkenalkan kami KENALANIMAL, sebuah buku “pintar” yang akan menjadi teman belajar anak yang seru dan berbeda dari yang lain serta mudah di akses untuk semua orang. Kenalanimal Smartbook kali ini akan....",
+			"kreator_detail": {
+				"team" : "Kenalanimal",
+				"member": [
+					{
+						"nama": "Devena Uliha",
+						"sosmed": "@isicutter"
+					},
+					{
+						"nama": "Bagus Jati S",
+						"sosmed": "@bagusjatisatria_"
+					},
+					{
+						"nama": "M Haidar F",
+						"sosmed": "@_mhfa"
+					},
+					{
+						"nama": "Calvin Izumi",
+						"sosmed": "@cosmix_works"
+					},
+					{
+						"nama": "Aulia",
+						"sosmed": "@aulia.wdyc"
+					},
+					{
+						"nama": "Viona",
+						"sosmed": "@vionasg"
+					},
+					{
+						"nama": "Tiwi",
+						"sosmed": "@tiwi_0112"
+					},
+					{
+						"nama": "Candra",
+						"sosmed": "@candr_dy"
+					}
+				]
+			}
+		},
+		{
+			"id":2,
+			"judul": "Animasi Edukasi — Kenalan sama Baju Adat di Indonesia",
+			"kreator": "Fadhila, Fitri, Nadya, Nia, Ana, Vatoni, Raisya, Syahrul",
+			"preview": "Rasa nasionalisme pada Gen Z (1997 - 2012) dianggap semakin menurun. Dapat dilihat dari  berkurangnya pengetahuan tentang Baju Adat di Indonesia. Dari 34 provinsi, kami mengambil 5 provinsi dari tiap pulau besar yang ada di Indonesia yaitu Aceh, Banten, Kalimantan Utara, Sulawesi Barat, dan Papua Barat.",
+			"kreator_detail": {
+				"team" : "Regu Matahari",
+				"member": [
+					{
+						"nama": "Fadhila Putri",
+						"sosmed": "@mashiato"
+					},
+					{
+						"nama": "Fitri Nur Hasanah",
+						"sosmed": "@fitrihsnh"
+					},
+					{
+						"nama": "Nadya Yoga",
+						"sosmed": "@naadyayoga"
+					},
+					{
+						"nama": "Safira Nisa",
+						"sosmed": "@mayoniceio"
+					},
+					{
+						"nama": "Ghozi Tsana",
+						"sosmed": "@ghoziana_"
+					},
+					{
+						"nama": "Nur Vatoni",
+						"sosmed": "@nvatoni"
+					},
+					{
+						"nama": "Raisya Nurdina",
+						"sosmed": "@raisyanurdina"
+					},
+					{
+						"nama": "Syahrul Ramadhani",
+						"sosmed": "@muhammad_syahrul3121"
+					}
+				]
+			}
+		},
+		{
+			"id": 3,
+			"judul": "Memahami Orang Lain",
+			"kreator": "Fadil, Dinicka, Ayukk, Franky, Wahyu, Zahra, Galih, Defry",
+			"preview": "Manusia memang memiliki pikiran yang beraneka ragam, bahkan banyak yang mengatakan bahwa pikiran manusia layaknya lubang yang tidak pernah diketahui kedalamannya. Disini kami akan memperkenalkan bagaimana caranya untuk memahami orang lain",
+			"kreator_detail": {
+				"team" : "Ping 8.8.8.8",
+				"member": [
+					{
+						"nama": "Fadil",
+						"sosmed": "@ahmadfadilah540"
+					},
+					{
+						"nama": "Dinicka",
+						"sosmed": "@nicka.e"
+					},
+					{
+						"nama": "Ayukk",
+						"sosmed": "@ayyuk_16"
+					},
+					{
+						"nama": "Frenky",
+						"sosmed": "@liung_fixs"
+					},
+					{
+						"nama": "Wahyu",
+						"sosmed": "@mangantasno"
+					},
+					{
+						"nama": "Zahra",
+						"sosmed": "@iralta46"
+					},
+					{
+						"nama": "Defry",
+						"sosmed": "@de_fry05"
+					},
+					{
+						"nama": "Galih",
+						"sosmed": "@julswise"
+					}
+				]
+			}
+		},
+		{
+			"id": 4,
+			"judul": "Melawan Covid-19",
+			"kreator": "Design by - Erlina, Candra, Ria, Feya, Ghani, Febri, Daffa",
+			"preview": "Sebagian masyarakat Indonesia masih menganggap remeh virus Covid-19, ada yang tidak percaya, bahkan membuat konspirasi. Dengan memvisualisasikan Covid-19, kami ingin masyarakat mempercayai virus ini dan bersama melawan Covid-19.",
+			"kreator_detail": {
+				"team" : "TealPeach",
+				"member": [
+					{
+						"nama": "Ghani Affan Fersada",
+						"sosmed": "@ghaniaffan_"
+					},
+					{
+						"nama": "Dhiya Daffa",
+						"sosmed": "@dhiyadaff"
+					},
+					{
+						"nama": "Febri Cahyadi",
+						"sosmed": "@cahyadiifeb"
+					},
+					{
+						"nama": "Candra",
+						"sosmed": "@candrafl"
+					},
+					{
+						"nama": "Erlina HS",
+						"sosmed": "@erlina.hs"
+					},
+					{
+						"nama": "Ria Irawati",
+						"sosmed": "@bariairawati"
+					},
+					{
+						"nama": "Alifia Putri",
+						"sosmed": "@bakpiiya"
+					}
+				]
+			}
+		},
+		{
+			"id": 5,
+			"judul": "Visualisasi Musik: Breathe",
+			"kreator": "Fiola, Gita, Zia, Raida, Yonika, Bela, Melita, Diva, Pipit",
+			"preview": "“Breathe” merupakan lagu yang bercerita tentang seseorang yang berjuang keras untuk tetap hidup. Yaitu kehidupan yang penuh dengan tekanan dan dorongan hingga kesulitan untuk bernapas. Lagu realistis yang dibuat oleh mendiang Jonghyun SHINee. “Breathe” juga mengajarkan kita untuk memberi ruang pada diri untuk berhenti sejenak dan bernapas.",
+			"kreator_detail": {
+				"team" : "Tadika Mesra",
+				"member": [
+					{
+						"nama": "Fiola Cindy",
+						"sosmed": "@fiolacindya_"
+					},
+					{
+						"nama": "Catur Bela",
+						"sosmed": "@gitakanima"
+					},
+					{
+						"nama": "Aziza Ayuning",
+						"sosmed": "@zziapaya"
+					},
+					{
+						"nama": "Raida Salsabila",
+						"sosmed": "@rsalsabila31"
+					},
+					{
+						"nama": "Yonika Sherli",
+						"sosmed": "@k.yonika"
+					},
+					{
+						"nama": "Salsabila Thalita",
+						"sosmed": "@slsbilatalitha"
+					},
+					{
+						"nama": "Diva Amelia",
+						"sosmed": "@divamelia_19"
+					},
+					{
+						"nama": "Melita Fathonawati",
+						"sosmed": "@yozerxx"
+					},
+					{
+						"nama": "Defitria Murvanda",
+						"sosmed": "@defitrians"
+					}
+				]
+			}
+		},
+		{
+			"id": 6,
+			"judul": "Rebranding Pasar Triwindu",
+			"kreator": "Design by :  Luthfi, Kafka, Rifani, Ifantias, Valdi, Ilham, Aul, Aldi",
+			"preview": "Membranding ulang salah satu pasar unik yang masih awam didengar kalangan masyarakat dalam maupun luar Solo. 'Pasar  Triwindu' atau yang pertama kali diberi nama sebagai Pasar Windujenar. Pasar peninggalan Raja Pura Mangkunegaran yang sebagai pusat penjualan barang antik dan kuno di kota Solo.",
+			"kreator_detail": {
+				"team" : "Grahita Sembarani",
+				"member": [
+					{
+						"nama": "Kafka Ibram",
+						"sosmed": "@bluecandlewood"
+					},
+					{
+						"nama": "Luthfi Akbari",
+						"sosmed": "@luthfeee_"
+					},
+					{
+						"nama": "Rifani Mahasin",
+						"sosmed": "@riffaan_"
+					},
+					{
+						"nama": "Aldi Bangun",
+						"sosmed": "@aldibds_"
+					},
+					{
+						"nama": "Aulia Miftakhul Q",
+						"sosmed": "@aulmftkhl"
+					},
+					{
+						"nama": "Ifantias Rulianto",
+						"sosmed": "@ifantias_"
+					},
+					{
+						"nama": "Ilham Albasri",
+						"sosmed": "@ilhamalbas18"
+					},
+					{
+						"nama": "Vivaldi Riandika S",
+						"sosmed": "@ossasmita"
+					}
+				]
+			}
+		},
+		{
+			"id": 7,
+			"judul": "E-Book No More Insecure",
+			"kreator": "Comic 9 Team",
+			"preview": "E-Book yang berjudul “No More Insecure” ini ditujukan untuk orang-orang yang masih merasa insecure. Tersedia untuk didownload, berisi mengenai hal-hal seputar insecure, personal insecure test, dan cara mengatasi insecure...",
+			"kreator_detail": {
+				"team" : "Comic 9",
+				"member": [
+					{
+						"nama": "Sahid",
+						"sosmed": "@uibysahid"
+					},
+					{
+						"nama": "Jetindra",
+						"sosmed": "@jetindraw"
+					},
+					{
+						"nama": "Aditya",
+						"sosmed": "@adnatanael10"
+					},
+					{
+						"nama": "Thilal",
+						"sosmed": "@thiilalgg"
+					},
+					{
+						"nama": "Revi",
+						"sosmed": "@reviputraa_"
+					},
+					{
+						"nama": "Sakina",
+						"sosmed": "@sakinapandan"
+					},
+					{
+						"nama": "Elan",
+						"sosmed": "@ghifarielan"
+					},
+					{
+						"nama": "Aura",
+						"sosmed": "@auraamhrni_"
+					},
+					{
+						"nama": "Mikha",
+						"sosmed": "-"
+					}
+				]
+			}
+		},
+		{
+			"id": 8,
+			"judul": "Solusign",
+			"kreator": "Tyas, Shafa, Wahyu, Firman, Ghofur, Wawan, Farhan, Syuhada",
+			"preview": "Sign system merupakan suatu sistem penandaan yang begitu penting dan diperlukan di kehidupan ini, selain sebagai petunjuk, penamaan, penyampaian informasi singkat, dapat juga berupa aturan-aturan atau norma-norma yang dipakai dan diakui pada tempat tertentu dan dapat dimengerti oleh warga masyarakatnya. ",
+			"kreator_detail": {
+				"team" : "SOLUSIGN",
+				"member": [
+					{
+						"nama": "Syuhada Faris",
+						"sosmed": "@creatvreee"
+					},
+					{
+						"nama": "Farhan M",
+						"sosmed": "@faarhaanm"
+					},
+					{
+						"nama": "Firman Adin",
+						"sosmed": "@firmanzabiddi"
+					},
+					{
+						"nama": "Ghofur Haris H",
+						"sosmed": "@ghofzkilla"
+					},
+					{
+						"nama": "Sekarningtyas",
+						"sosmed": "@tyasbw"
+					},
+					{
+						"nama": "Setiawan A",
+						"sosmed": "@wwnstiwen"
+					},
+					{
+						"nama": "Wahyu Putra N",
+						"sosmed": "@wvhyu666"
+					},
+					{
+						"nama": "Shafa Hasna",
+						"sosmed": "@07_lyy"
+					}
+				]
+			}
+		},
+		{
+			"id": 9,
+			"judul": "Animasi Opening Podcast Deddy Corbuzier",
+			"kreator": "Yusuf, Fian, Ceha,Latif, Lutfi, Jesslyn, Fafa",
+			"preview": "Dalam sebuah acara youtube diperlukan konten grafis pendukung. Untuk itu kami membuat konten pendukung untuk acara podcast Deddy Corbuzier.",
+			"kreator_detail": {
+				"team" : "Animasyik",
+				"member": [
+					{
+						"nama": "Yusuf Alpharezi H",
+						"sosmed": "@yusuf_alpharezi"
+					},
+					{
+						"nama": "Fian Irfani",
+						"sosmed": "@artirf"
+					},
+					{
+						"nama": "Elizabeth Christine",
+						"sosmed": "@aliceceha"
+					},
+					{
+						"nama": "Latif Arul K",
+						"sosmed": "@tailung___"
+					},
+					{
+						"nama": "Lutfi Dwi F",
+						"sosmed": "@lutfi.dclxvi"
+					},
+					{
+						"nama": "Jesslyn Dwitiya L I",
+						"sosmed": "@jesslyndvide"
+					},
+					{
+						"nama": "Eva Haya N F",
+						"sosmed": "@fafanabila11"
+					}
+				]
+			}
+		},
+		{
+			"id": 10,
+			"judul": "Jajanan Pasar",
+			"kreator": "Isni, Jessica, Nanda, Rahma, Cintya, Diana",
+			"preview": "Banyak anak-anak jaman sekarang yang kurang mengenal adanya jajanan pasar, karena dari segi keberadaanya pun jajanan pasar sudah kalah bersaing dengan makanan- makanan kekinian lainya.",
+			"kreator_detail": {
+				"team" : "Jajanan Pasar",
+				"member": [
+					{
+						"nama": "Isni Wahyu S",
+						"sosmed": "@isniwahyu5"
+					},
+					{
+						"nama": "Jessica Millenial P",
+						"sosmed": "@jejempx.13"
+					},
+					{
+						"nama": "Nanda Fatimah S",
+						"sosmed": "@nanda_fatimah"
+					},
+					{
+						"nama": "Rahma Fadhillah H",
+						"sosmed": "@rahmaafdh"
+					},
+					{
+						"nama": "Cintya Dewi N",
+						"sosmed": "@cint.yyy"
+					},
+					{
+						"nama": "Diana Pramesti P",
+						"sosmed": "@okydokii"
+					}
+				]
+			}
+		},
+		{
+			"id": 11,
+			"judul": "Batikin",
+			"kreator": "Faro, Restu, Rezky, Najib, Bintang, Devina, Diwai, Irna, Kahfi",
+			"preview": "Mengenalkan kembali budaya warisan nenek moyang yaitu batik yang sudah mulai tidak dikenali oleh anak muda jaman sekarang."
+		},
+		{
+			"id": 12,
+			"judul": "Photography : Traffic Sign/ Rambu lalu lintas",
+			"kreator": "Aca, Andhika, Ayun, Dhea, Dani, El,  Queena, Sabrina",
+			"preview": "Pelanggaran lalu lintas dapat disebabkan karena ketidaktahuan pengendara terhadap arti dari suatu rambu lalu lintas. Dari permasalahan tersebut, timbulah gagasan untuk membuat kumpulan fotografi yang mengangkat tema seputar traffic sign.",
+			"kreator_detail": {
+				"team" : "AESPA",
+				"member": [
+					{
+						"nama": "Andhika Susila P",
+						"sosmed": "@andhikasus_86"
+					},
+					{
+						"nama": "Ayuniar S A",
+						"sosmed": "@ayuniiarawles"
+					},
+					{
+						"nama": "M Dani F",
+						"sosmed": "@instagram"
+					},
+					{
+						"nama": "Dhea Sekar R",
+						"sosmed": "@dheasekarr"
+					},
+					{
+						"nama": "Donny L A",
+						"sosmed": "@el_arzaq"
+					},
+					{
+						"nama": "B N Sabrina",
+						"sosmed": "@bnsbrna"
+					},
+					{
+						"nama": "Queena C A W",
+						"sosmed": "@qicea"
+					},
+					{
+						"nama": "Faza Steranika",
+						"sosmed": "@fazast_"
+					}
+				]
+			}
+		}
 	]
 }

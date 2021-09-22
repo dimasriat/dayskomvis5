@@ -1,0 +1,53 @@
+extends layout.pug
+
+block content
+	div(class="w-full py-8 min-h-screen" style="color: #14163F;")
+		div(class="w-full flex justify-center item-center py-24")
+			img(src=`/img/pameran/asset_${karya.id}/banner.png` class="w-full")
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full")
+			div(class="text-4xl font-bold text-left")= karya.judul
+		div(class="mx-auto container px-4 md:px-24 lg:px-48 w-full h-full" style="color: #72727A;")
+			div(class="px-8")
+				p(class="text-center text-md py-24")
+					| E-Book yang berjudul “No More Insecure” ini ditujukan untuk orang-orang yang masih merasa insecure. Tersedia untuk didownload, berisi mengenai hal-hal seputar insecure, personal insecure test, dan cara mengatasi insecure. Silahkan didownload dan boleh dishare, tersedia juga WhatsApp Stikers sebagai penunjang karya
+
+			div(class=`w-full`)
+				img(src=`/img/pameran/asset_${karya.id}/pic1.png` class="w-full mb-16")
+				
+			div(class=`w-full py-24 flex justify-center`)
+				a(href="https://drive.google.com/file/d/1fqnRrX4js8IlsP6-gZJUnvZwgY-iBVPq/view?usp=sharing" class="p-4 bg-blue-700 text-white rounded-xl text-center hover:underline")
+					| Download E-book Disini
+
+			div(class="md:pr-48")
+				p(class="text-left text-md py-24")
+					| Saat kita mendapati curhatan teman, dan mereka menceritakan bahwa mereka sedang insecure, kita bisa memberikan stiker ini kepada mereka sembari kita memberikan saran. Tentunya dengan penunjang ini, suatu ke-insecure-an bisa dapat diatasi dengan lebih baik
+
+			div(class="w-full grid grid-cols-1 md:grid-cols-2 gap-4 py-24")
+				- let i = 0
+				while i < 6
+					div(class=`w-full md:p${i % 2 ? 't' : 'b'}-36`)
+						img(src=`/img/pameran/asset_${karya.id}/g${i + 1}.png` class="w-full")
+					- i++
+			div(class=`w-full`)
+				p(class="text-center text-md py-24")
+					| Dan masih banyak lagi
+
+			div(class=`w-full py-24 flex justify-center`)
+				a(href="https://bit.ly/NoMoreInsecureStickerWA" class="p-4 bg-blue-700 text-white rounded-xl text-center hover:underline")
+					| Download Stiker Disini
+
+			div(class=`w-full py-24 `)
+				img(src=`/img/pameran/asset_${karya.id}/pic2.png` class="w-full mb-16")
+			
+			div(class="mt-24 py-12 flex flex-col justify-center items-center")
+				div(class="flex flex-col justify-center items-center")
+					img(src=`/img/pameran/asset_${karya.id}/team_logo.png` class="w-32")
+					p(class="text-3xl mt-4 text-center font-bold" style="color: #14163F;")= karya.kreator_detail.team
+					
+					div(class="flex flex-wrap justify-center")
+						each member in karya.kreator_detail.member
+							div(class="px-4 w-32 md:w-40 mt-12")
+								div(class="py-4 flex flex-col items-center text-center")
+									img(src=`/img/pameran/asset_${karya.id}/kreator_${member.nama.toLowerCase()}.png` class="")
+									div(class="mt-8 font-bold" style="color: #363636")= member.nama
+									div(class="mt-2 text-sm")= member.sosmed
